@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  seq:
+    image: datalust/seq:latest
+
+  counter-app:
+    image: counter-app-with-seq
+    build:
+      context: .
+      dockerfile: ./DotNet.Docker/Dockerfile
+    volumes: 
+      - ./DotNet.Docker/appsettings.json:/App/appsettings.json
+    environment:
+      - 'Serilog__WriteTo__1__Name=Seq'
+      - 'Serilog__WriteTo__1__Args__serverUrl=http://host.docker.internal:5341'
+    depends_on:
+      - seq
+
+# docker compose build
+# docker compose up -d
+# docker compose down
