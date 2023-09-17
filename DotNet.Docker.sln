@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.Docker", "Docker-Net-Counter-Serilog-Seq\DotNet.Docker.csproj", "{F8B7729C-689C-43A2-A7A3-B4E65CF1AF3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.Docker", "DotNet.Docker\DotNet.Docker.csproj", "{F8B7729C-689C-43A2-A7A3-B4E65CF1AF3C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0CFB860E-F9ED-47C6-A80D-1D815A56F410}"
 EndProject
